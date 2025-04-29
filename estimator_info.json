@@ -1,0 +1,47 @@
+{
+  "hierarchy": {
+    "name": "CrossValidator",
+    "evaluator": {
+      "name": "RegressionEvaluator"
+    },
+    "tuned_estimator": {
+      "name": "ALS"
+    }
+  },
+  "CrossValidator": {
+    "tuning_parameter_map_list": [
+      {
+        "ALS.rank": 17,
+        "ALS.regParam": 0.15
+      },
+      {
+        "ALS.rank": 18,
+        "ALS.regParam": 0.15
+      },
+      {
+        "ALS.rank": 19,
+        "ALS.regParam": 0.15
+      }
+    ],
+    "tuned_estimator_parameter_map": {
+      "ALS.alpha": 1.0,
+      "ALS.blockSize": 4096,
+      "ALS.checkpointInterval": 10,
+      "ALS.coldStartStrategy": "drop",
+      "ALS.finalStorageLevel": "MEMORY_AND_DISK",
+      "ALS.implicitPrefs": false,
+      "ALS.intermediateStorageLevel": "MEMORY_AND_DISK",
+      "ALS.itemCol": "GameIndex",
+      "ALS.maxIter": 10,
+      "ALS.nonnegative": false,
+      "ALS.numItemBlocks": 10,
+      "ALS.numUserBlocks": 10,
+      "ALS.predictionCol": "prediction",
+      "ALS.rank": 10,
+      "ALS.ratingCol": "Rating",
+      "ALS.regParam": 0.1,
+      "ALS.seed": -1517157561977538513,
+      "ALS.userCol": "UserIndex"
+    }
+  }
+}

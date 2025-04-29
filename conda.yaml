@@ -1,0 +1,10 @@
+channels:
+- conda-forge
+dependencies:
+- python=3.10.12
+- pip<=22.3.1
+- pip:
+  - mlflow
+  - pyspark
+  - databricks-feature-engineering
+name: mlflow-env
