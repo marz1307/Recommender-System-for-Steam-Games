@@ -1,0 +1,19 @@
+artifact_path: best_cvs_model
+databricks_runtime: 14.3.x-cpu-ml-scala2.12
+flavors:
+  python_function:
+    data: sparkml
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.spark
+    python_version: 3.10.12
+  spark:
+    code: null
+    model_class: pyspark.ml.pipeline.PipelineModel
+    model_data: sparkml
+    pyspark_version: 3.5.0
+mlflow_version: 2.9.2
+model_uuid: 1cb49472732d41a3b9402ecac68d2dda
+run_id: 655a8ffd110d4c25b55a00fe838cf736
+utc_time_created: '2025-04-22 07:54:24.865215'
